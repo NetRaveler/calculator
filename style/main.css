@@ -1,9 +1,51 @@
-#display {
-    height: 20px;
-    width: 200px;
-    border: 1px solid black;
+#container {
+    background-color: lightgray;
+    width: 300px;
     display: flex;
-    flex-direction: row;
-    justify-content: end;
-    padding-right: 2px
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+#display {
+    height: 60px;
+    width: 280px;
+    display: flex;
+    flex-grow: 0;
+    justify-content: right;
+    align-items: center;
+    border: 1px solid black;
+    padding-right: 2px;
+    background-color: white;
+    font-size: 50px;
+}
+#numbers {
+    display: flex;
+    flex-wrap: wrap;
+    width: 300px;
+    flex-grow: 0;
+    justify-content: space-between;
+}
+#operands {
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 0;
+}
+#operands input {
+    font-size: 50px;
+
+}
+#numbers input {
+    font-size: 50px;
+    margin: 5px;
+    flex-grow: 0;
+
+}
+#numbers input:hover {
+    background-color: gray;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
